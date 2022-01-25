@@ -4,8 +4,8 @@ from flask import Flask, render_template, request,jsonify
 from flask_cors import CORS,cross_origin
 import pickle
 
-app = Flask(__name__) # initializing a flask app
-
+application = Flask(__name__) # initializing a flask app
+app=application
 @app.route('/',methods=['GET'])  # route to display the home page
 @cross_origin()
 def homePage():
